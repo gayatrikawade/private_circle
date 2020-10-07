@@ -13,52 +13,55 @@ export class AppComponent {
   items = [
     {
       'date': 'April 15',
-      'name': 'Aeione',
-      'entitie': 5,
-      'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
-        "vbjdvbnbfhj hjbdfjhaf n fjdf"]
+      'name': 'Competitve Intelligence',
+      'entitie': 0,
+      'details': ["TCS Limited",
+        "Infosys Limited"]
     },
     {
-      'date': 'April 15',
+      'date': 'May 15',
       'name': 'BridgeLabz',
       'entitie': 5,
-      'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
-        "vbjdvbnbfhj hjbdfjhaf n fjdf", "vbjdvbnbfhj hjbdfjhaf n fjdf", "vbjdvbnbfhj hjbdfjhaf n fjdf"]
+      'details': ["Think amd Learn PVT LTD",
+        "Vodafoane Idea Ltd", "Swiggy", "Uber LTD"]
     },
     {
-      'date': 'April 15',
-      'name': 'Aeione',
-      'entitie': 5,
+      'date': 'December 9',
+      'name': 'Custom',
+      'entitie': 15,
+      'details': ["Cosmic eyes LTD",
+        "Demo LTD"]
+    },
+    {
+      'date': 'September 15',
+      'name': 'To_mumbai',
+      'entitie': 8,
+      'details': ["Balaji Wafers Limited",
+        "Haldirams Limited"]
+    },
+    {
+      'date': 'November 1',
+      'name': 'KPMG Comapny',
+      'entitie': 14,
       'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
         "vbjdvbnbfhj hjbdfjhaf n fjdf"]
     },
     {
-      'date': 'April 15',
-      'name': 'Aeione',
+      'date': 'August 5',
+      'name': 'My vendors',
       'entitie': 5,
-      'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
-        "vbjdvbnbfhj hjbdfjhaf n fjdf"]
+      'details': ["Openlane",
+        "Yearin",
+        "Goodsilron",
+        "Condax",
+        "Opentech"]
     },
     {
-      'date': 'April 15',
-      'name': 'Aeione',
-      'entitie': 5,
-      'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
-        "vbjdvbnbfhj hjbdfjhaf n fjdf"]
-    },
-    {
-      'date': 'April 15',
-      'name': 'Aeione',
-      'entitie': 5,
-      'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
-        "vbjdvbnbfhj hjbdfjhaf n fjdf"]
-    },
-    {
-      'date': 'April 15',
-      'name': 'Aeione',
-      'entitie': 5,
-      'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
-        "vbjdvbnbfhj hjbdfjhaf n fjdf"]
+      'date': 'July 8',
+      'name': 'Vickara',
+      'entitie': 25,
+      'details': ["Data now solutions",
+        "Capgemini India"]
     },
 
   ];
