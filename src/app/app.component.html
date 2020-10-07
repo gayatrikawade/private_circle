@@ -4,7 +4,7 @@
       <button class="primary">SAVED LIST</button>
       <button class="primary">SAVED LIST</button>
       <button class="primary">SAVED LIST</button>
-      <input type="search" id="gsearch" name="gsearch" class="search">
+      <input type="text" id="gsearch" name="gsearch"[(ngModel)]="searchText" class="search" placeholder="search">
     </div>
   </div>
   <div class="item_block">
@@ -19,7 +19,7 @@
           </div>
         </li>
       </ul>
-      <ul class="o-all-items-list" *ngFor="let item of items">
+      <ul class="o-all-items-list" *ngFor="let item of items | filter: searchText">
         <li class="o-all-items-list__item">
           <div>
             <div class="item_date">{{ item.date }}</div>

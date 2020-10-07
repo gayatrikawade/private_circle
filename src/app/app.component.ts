@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'private-circle-assighnment';
   details = [];
+  searchText;
 
   items = [
     {
@@ -19,7 +20,7 @@ export class AppComponent {
     },
     {
       'date': 'April 15',
-      'name': 'Aeione',
+      'name': 'BridgeLabz',
       'entitie': 5,
       'details': ["jabvkkkkkkkk hjdsfbasf jbfjaef",
         "vbjdvbnbfhj hjbdfjhaf n fjdf", "vbjdvbnbfhj hjbdfjhaf n fjdf", "vbjdvbnbfhj hjbdfjhaf n fjdf"]
