@@ -1,21 +1,50 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container">
+  <div class="header">
+    <div class="saved-items">
+      <button class="primary">SAVED LIST</button>
+      <button class="primary">SAVED LIST</button>
+      <button class="primary">SAVED LIST</button>
+      <input type="search" id="gsearch" name="gsearch" class="search">
+    </div>
+  </div>
+  <div class="item_block">
+    <div class="item_block_left">
+      <ul class="o-all-items-list-heading">
+        <li class="o-all-items-list__item">
+          <div>
+            <div class="item_date">Date</div>
+            <div class="item_name">Name</div>
+            <div class="item_entities">No. of entities</div>
+            <div class="item_actions">Actions</div>
+          </div>
+        </li>
+      </ul>
+      <ul class="o-all-items-list" *ngFor="let item of items">
+        <li class="o-all-items-list__item">
+          <div>
+            <div class="item_date">{{ item.date }}</div>
+            <div class="item_name">{{ item.name}}</div>
+            <div class="item_entities">{{item.entitie}}</div>
+            <div class="item_actions">ddsf</div>
+            <div class="details">
+              <button (click)="showDetails(item.details)">Details</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="item_block_right">
+      <div class="description">
+       Description is not added yet
+      </div>
+      <div class="item_datilas_all" *ngFor="let detail of details">
+        <div class="item_details_single">
+          {{detail}}
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
 <router-outlet></router-outlet>
