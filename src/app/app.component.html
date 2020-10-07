@@ -4,7 +4,7 @@
       <button class="primary">SAVED LIST</button>
       <button class="primary">SAVED LIST</button>
       <button class="primary">SAVED LIST</button>
-      <input type="text" id="gsearch" name="gsearch"[(ngModel)]="searchText" class="search" placeholder="search">
+      <input type="text" id="gsearch" name="gsearch" [(ngModel)]="searchText" class="search" placeholder="search">
     </div>
   </div>
   <div class="item_block">
@@ -25,7 +25,14 @@
             <div class="item_date">{{ item.date }}</div>
             <div class="item_name">{{ item.name}}</div>
             <div class="item_entities">{{item.entitie}}</div>
-            <div class="item_actions">ddsf</div>
+            <div class="item_actions">
+              <div class="items_actions_each">
+                <img src="assets/share.png" class="items_actions_each">
+                <img src="assets/message.png" class="items_actions_each">
+                <img src="assets/delete-forever.png" class="items_actions_each">
+                <img src="assets/pencil.png" class="items_actions_each">
+              </div>
+            </div>
             <div class="details">
               <button (click)="showDetails(item.details)">Details</button>
             </div>
@@ -35,7 +42,7 @@
     </div>
     <div class="item_block_right">
       <div class="description">
-       Description is not added yet
+        Description is not added yet
       </div>
       <div class="item_datilas_all" *ngFor="let detail of details">
         <div class="item_details_single">
@@ -47,4 +54,4 @@
 
 </div>
 
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
