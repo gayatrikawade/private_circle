@@ -4,7 +4,7 @@
       <button class="primary">SAVED LIST</button>
       <div style="align-items: center;margin-top: 5px; display: flex; justify-content: space-between;">
         <img src="assets/filter.png" class="items_actions_each">
-        <div>SAVED LIST</div>
+        <div>SAVED FILTER</div>
       </div>
       <div style="align-items: center;margin-top: 5px; display: flex">
         <img src="assets/time-machine.png" class="items_actions_each">
@@ -40,7 +40,7 @@
               </div>
             </div>
             <div class="details">
-              <button (click)="showDetails(item.details)">Details</button>
+              <button (click)="showDetails(item.details)" class="details_button">Details</button>
             </div>
           </div>
         </li>
@@ -57,7 +57,6 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <!-- <router-outlet></router-outlet> -->

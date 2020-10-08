@@ -62,13 +62,23 @@ export class AppComponent {
       'entitie': 25,
       'details': ["Data now solutions",
         "Capgemini India"]
-    },
+    },{
+      'date': 'July 8',
+      'name': 'Vickara',
+      'entitie': 25,
+      'details': ["Data now solutions",
+        "Capgemini India"]
+    },{
+      'date': 'July 8',
+      'name': 'Vickara',
+      'entitie': 25,
+      'details': ["Data now solutions",
+        "Capgemini India"]
+    }
 
   ];
 
   showDetails(details) {
-    console.log("bdvjdd");
-
     this.details = details;
   }
 }
