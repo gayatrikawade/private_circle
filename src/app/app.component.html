@@ -2,9 +2,15 @@
   <div class="header">
     <div class="saved-items">
       <button class="primary">SAVED LIST</button>
-      <button class="primary">SAVED LIST</button>
-      <button class="primary">SAVED LIST</button>
-      <input type="text" id="gsearch" name="gsearch" [(ngModel)]="searchText" class="search" placeholder="search">
+      <div style="align-items: center;margin-top: 5px; display: flex; justify-content: space-between;">
+        <img src="assets/filter.png" class="items_actions_each">
+        <div>SAVED LIST</div>
+      </div>
+      <div style="align-items: center;margin-top: 5px; display: flex">
+        <img src="assets/time-machine.png" class="items_actions_each">
+        <div>SEARCH HISTORY</div>
+      </div>
+      <input type="text" id="gsearch" name="gsearch" [(ngModel)]="searchText" class="search" placeholder="Search">
     </div>
   </div>
   <div class="item_block">
